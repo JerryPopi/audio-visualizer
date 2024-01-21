@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="container" style="background-color: black">
+        <audio src="gydra_ikra.opus" controls id="audioctr"></audio>
         <canvas id="cnv"></canvas>
     </div>
 
@@ -20,5 +21,20 @@
     * {
         margin: 0;
         padding: 0;
+        overflow-y: hidden;
+    }
+
+    #container {
+        display: block;
+        overflow: hidden;
+    }
+
+    audio {
+        position: absolute;
+    }
+
+    canvas {
+        width: 100%;
+        height: 100%;
     }
 </style>
